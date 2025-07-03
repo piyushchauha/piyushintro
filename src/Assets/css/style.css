@@ -234,6 +234,19 @@ img {
 }
 
 @media (max-width: 422px) {
+  .skill-card {
+    aspect-ratio: 1 / 1;
+    height: 160px;
+    width: 100%;
+  }
+  .centered-img-container {
+    height: 80px; /* Adjust to fit square space */
+  }
+  .centered-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
   .num {
     padding-top: 2rem;
     display: block;

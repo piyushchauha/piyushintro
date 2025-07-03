@@ -25,6 +25,7 @@ import Mui from '../Assets/images/Mui.png'
 import tcssoftskill from '../Assets/images/Chauhan_Piyush_tcs softskill_page-0001.jpg'
 import tatacybersecurity from '../Assets/images/Piyush Chauhan Cybersecurity Analyst Job Simulation_page-0001.jpg'
 import Piyushchauhancv from '../Assets/Pdf/piyushchauhancv.pdf';
+import portfolio from '../Assets/images/piyushintrohome.png';
 // NO LONGER NEEDED if using Bootstrap's native ScrollSpy
 // import ScrollSpy from 'react-scrollspy';
 
@@ -140,18 +141,17 @@ const Homepage = () => {
       </section>
       {/* //HOME SECTION */}
 
-      {/* SERVICES */}
-    <section id="services" className="full-hight px-lg-5">
+     {/* SERVICES */}
+<section id="services" className="full-hight px-lg-5">
   <div className="container">
-    <div className="row p-4"  style={{display:'flex',justifyContent:'center'}}>
-      <div className="col-md-8 "data-aos="fade-up">
-        <h1 >My Skills</h1>
+    <div className="row p-4">
+      <div className="col-md-8 mx-auto text-center" data-aos="fade-up">
+        <h1>My Skills</h1>
       </div>
     </div>
-
     <div className="row gy-4">
       {/* ReactJS */}
-      <div className="col-md-3" data-aos="fade-up">
+      <div className="col-6 col-md-3" data-aos="fade-up">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Reactjs} alt="ReactJS" />
@@ -159,9 +159,8 @@ const Homepage = () => {
           <h5 className="mt-3">ReactJS</h5>
         </div>
       </div>
-
       {/* NodeJS */}
-      <div className="col-md-3" data-aos="fade-up" data-aos-delay="100">
+      <div className="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Nodejs} alt="NodeJS" />
@@ -169,9 +168,8 @@ const Homepage = () => {
           <h5 className="mt-3">NodeJS</h5>
         </div>
       </div>
-
       {/* ExpressJS */}
-      <div className="col-md-3" data-aos="fade-up" data-aos-delay="200">
+      <div className="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={ExpressJS} alt="ExpressJS" />
@@ -179,9 +177,8 @@ const Homepage = () => {
           <h5 className="mt-3">ExpressJS</h5>
         </div>
       </div>
-
       {/* MongoDB */}
-      <div className="col-md-3" data-aos="fade-up" data-aos-delay="300">
+      <div className="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Mongodb} alt="MongoDB" />
@@ -189,9 +186,8 @@ const Homepage = () => {
           <h5 className="mt-3">MongoDB</h5>
         </div>
       </div>
-
       {/* HTML */}
-      <div className="col-md-3" data-aos="fade-up">
+      <div className="col-6 col-md-3" data-aos="fade-up">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Html} alt="HTML" />
@@ -199,9 +195,8 @@ const Homepage = () => {
           <h5 className="mt-3">HTML</h5>
         </div>
       </div>
-
       {/* CSS */}
-      <div className="col-md-3" data-aos="fade-up" data-aos-delay="100">
+      <div className="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Css} alt="CSS" />
@@ -209,9 +204,8 @@ const Homepage = () => {
           <h5 className="mt-3">CSS</h5>
         </div>
       </div>
-
       {/* Redux */}
-      <div className="col-md-3" data-aos="fade-up" data-aos-delay="200">
+      <div className="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Redux} alt="Redux" />
@@ -219,9 +213,8 @@ const Homepage = () => {
           <h5 className="mt-3">Redux</h5>
         </div>
       </div>
-
       {/* MUI */}
-      <div className="col-md-3" data-aos="fade-up" data-aos-delay="300">
+      <div className="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
         <div className="bg-base p-4 rounded-4 shadow-effect text-center skill-card">
           <div className="centered-img-container">
             <img src={Mui} alt="MUI" />
@@ -231,10 +224,7 @@ const Homepage = () => {
       </div>
     </div>
   </div>
-</section>
-
-
-      {/* //SERVICES */}
+</section>      {/* //SERVICES */}
 
     {/* WORK */}
 <section id="work" className="full-hight px-lg-5">
@@ -244,7 +234,7 @@ const Homepage = () => {
         <h1>My  Projects</h1>
       </div>
     </div>
-    {/* Monster Gym Project */}
+    {/* Amazon Project */}
     <div className="row gy-4">
       {/* CarVista Project */}
       <div className="col-12 col-md-10 col-lg-8 mx-auto mb-5" data-aos="fade-up">
@@ -284,6 +274,28 @@ The purpose of the project is to practice layout structuring, flexbox/grid syste
             </p>
             <a
               href="https://amazon-nq9h-git-main-piyushchauhas-projects.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-link btn btn-brand mt-2"
+            >
+              View Live
+            </a>
+          </div>
+        </div>
+      </div>
+       {/* Portfolio Intro Project */}
+      <div className="col-12 col-md-10 col-lg-8 mx-auto mb-5" data-aos="fade-up" data-aos-delay="300">
+        <div className="card rounded-4 bg-base shadow-effect">
+          <div className="img rounded-4">
+            <img src={portfolio} className="rounded-4 w-100" alt="Portfolio Intro Project" />
+          </div>
+          <div className="card-content p-3">
+            <h4>Portfolio Intro – Developer Profile Website</h4>
+            <p className="text-white">
+              Designed and deployed a professional developer introduction website with a sleek UI, responsive design, and dark theme. Showcases key skills, contact info, and resume with animated transitions. Built using React and styled with modern CSS.
+            </p>
+            <a
+              href="https://piyushintro.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="custom-link btn btn-brand mt-2"
