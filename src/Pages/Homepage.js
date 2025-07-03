@@ -7,11 +7,13 @@ import '../Assets/css/line-awesome.min.css'; // Import Line Awesome CSS
 import '../Assets/css/style.css'; // Import your custom style.css
 
 // Import images
-import profilePic from '../Assets/images/profilepic1.jpg';
-import project1 from '../Assets/images/project-1.jpg';
-import project2 from '../Assets/images/project-2.png';
-import project3 from '../Assets/images/project-3.png';
-import project4 from '../Assets/images/project-4.png';
+import profile from '../Assets/images/Profile.jpeg';
+// import project1 from '../Assets/images/project-1.jpg';
+// import project2 from '../Assets/images/project-2.png';
+// import project3 from '../Assets/images/project-3.png';
+// import project4 from '../Assets/images/project-4.png';
+import carvistahome from '../Assets/images/carvistahome.png';
+import amazonhome from '../Assets/images/amazonhome.png';
 import Reactjs from '../Assets/images/Reactjs.png'
 import Nodejs from '../Assets/images/Nodejs.png'
 import ExpressJS from '../Assets/images/Expressjs.png'
@@ -22,6 +24,7 @@ import Redux from '../Assets/images/Redux.png'
 import Mui from '../Assets/images/Mui.png'
 import tcssoftskill from '../Assets/images/Chauhan_Piyush_tcs softskill_page-0001.jpg'
 import tatacybersecurity from '../Assets/images/Piyush Chauhan Cybersecurity Analyst Job Simulation_page-0001.jpg'
+import Piyushchauhancv from '../Assets/Pdf/piyushchauhancv.pdf';
 // NO LONGER NEEDED if using Bootstrap's native ScrollSpy
 // import ScrollSpy from 'react-scrollspy';
 
@@ -62,7 +65,7 @@ const Homepage = () => {
           <a className="navbar-brand mx-lg-auto mb-lg-4" href="#home">
             <span className="fw-bold h3 d-block d-lg-none">Piyush Chauhan</span>
             <img
-              src={profilePic}
+              src={profile}
               className="d-none d-lg-block rounded-circle profilepic"
               alt="Piyush Chauhan"
             />
@@ -90,11 +93,12 @@ const Homepage = () => {
                 <a className="nav-link" href="#work">Work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">About</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="#certifications">Certifications</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#about">About</a>
+              </li>
+              
              
             </ul>
           </div>
@@ -120,11 +124,16 @@ const Homepage = () => {
                 world of innovative solutions I've crafted.
               </p>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a href="#work" className="btn btn-brand fw-bold me-4">
-                  EXPLORE MY WORK
-                </a>
-                <a href="tel:+911234567891" className="custom-link num"> Call: +91 1234567891</a>
-              </div>
+          <a href="#work" className="btn btn-brand fw-bold me-4">
+            EXPLORE MY WORK
+          </a>
+          <a href="tel:+918200933298" className="custom-link num me-4">
+            Call: +91 8200933298
+          </a>
+          <a href="mailto:piyushchauhan840@gmail.com" className="custom-link email">
+            Email: piyushchauhan840@gmail.com
+          </a>
+        </div>
             </div>
           </div>
         </div>
@@ -134,9 +143,9 @@ const Homepage = () => {
       {/* SERVICES */}
     <section id="services" className="full-hight px-lg-5">
   <div className="container">
-    <div className="row p-4">
-      <div className="col-md-8" data-aos="fade-up">
-        <h1>My Skills</h1>
+    <div className="row p-4"  style={{display:'flex',justifyContent:'center'}}>
+      <div className="col-md-8 "data-aos="fade-up">
+        <h1 >My Skills</h1>
       </div>
     </div>
 
@@ -227,161 +236,76 @@ const Homepage = () => {
 
       {/* //SERVICES */}
 
-      {/* WORK */}
-      <section id="work" className="full-hight px-lg-5">
-        <div className="container gy-4">
-          <div className="row p-4">
-            <div className="col-md-8" data-aos="fade-up">
-              <h6>WORK</h6>
-              <h1>My Recent Projects</h1>
-            </div>
-          </div>
-
-          <div className="row gy-4">
-            <div className="col-md-6 rounded-4" data-aos="fade-up">
-              <div className="card rounded-4 bg-base shadow-effect">
-                <div className="img rounded-4">
-                  <img src={project1} className="rounded-4" alt="Project 1" />
-                </div>
-                <div className="card-content p-3">
-                  <h4>Start up Loading Page</h4>
-                  <p className="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores facere fugiat quae officia sequi nemo! Aspernatur
-                    nesciunt ipsum nisi saepe!
-                  </p>
-                  {/* FIX: Use a button or a specific page link */}
-                  <button className="custom-link btn btn-link">Read More</button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="col-md-6 rounded-4"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div className="card rounded-4 bg-base shadow-effect">
-                <div className="img rounded-4">
-                  <img src={project2} className="rounded-4" alt="Project 2" />
-                </div>
-                <div className="card-content p-3">
-                  <h4>Start up Loading Page</h4>
-                  <p className="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores facere fugiat quae officia sequi nemo! Aspernatur
-                    nesciunt ipsum nisi saepe!
-                  </p>
-                  {/* FIX: Use a button or a specific page link */}
-                  <button className="custom-link btn btn-link">Read More</button>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 rounded-4" data-aos="fade-up">
-              <div className="card rounded-4 bg-base shadow-effect">
-                <div className="img rounded-4">
-                  <img src={project3} className="rounded-4" alt="Project 3" />
-                </div>
-                <div className="card-content p-3">
-                  <h4>Start up Loading Page</h4>
-                  <p className="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores facere fugiat quae officia sequi nemo! Aspernatur
-                    nesciunt ipsum nisi saepe!
-                  </p>
-                  {/* FIX: Use a button or a specific page link */}
-                  <button className="custom-link btn btn-link">Read More</button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="col-md-6 rounded-4"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div className="card rounded-4 bg-base shadow-effect">
-                <div className="img rounded-4">
-                  <img src={project4} className="rounded-4" alt="Project 4" />
-                </div>
-                <div className="card-content p-3">
-                  <h4>Start up Loading Page</h4>
-                  <p className="text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores facere fugiat quae officia sequi nemo! Aspernatur
-                    nesciunt ipsum nisi saepe!
-                  </p>
-                  {/* FIX: Use a button or a specific page link */}
-                  <button className="custom-link btn btn-link">Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* //WORK */}
-
-      {/* ABOUT */}
-    <section id="about" className="full-hight px-lg-5">
+    {/* WORK */}
+<section id="work" className="full-hight px-lg-5">
   <div className="container gy-4">
     <div className="row p-4">
-      <div className="col-md-8" data-aos="fade-up">
-        <h6>ABOUT</h6>
-        <h1>Education</h1>
+      <div className="col-md-8 mx-auto text-center" data-aos="fade-up">
+        <h1>My  Projects</h1>
       </div>
     </div>
+    {/* Monster Gym Project */}
+    <div className="row gy-4">
+      {/* CarVista Project */}
+      <div className="col-12 col-md-10 col-lg-8 mx-auto mb-5" data-aos="fade-up">
+        <div className="card rounded-4 bg-base shadow-effect">
+          <div className="img rounded-4">
+            <img src={carvistahome} className="rounded-4 w-100" alt="CarVista Project" />
+          </div>
+          <div className="card-content p-3">
+            <h4>CarVista – Buy & Sell Cars Platform</h4>
+            <p className="text-white">
+Developed a comprehensive full-stack web application inspired by Cars24 using the MERN stack (MongoDB, Express.js, React, Node.js).
+Key features include dynamic car listings, real-time car price estimation, test drive booking functionality, and inspection scheduling. The platform also incorporates a secure, role-based admin dashboard for efficient management of users, car inventories, and transactional workflows.
 
-    <div className="row mb-4 gy-4">
-      {/* Internship Card */}
-      <div className="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div className="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
-          <div>
-            <h5 className="mb-3">MERN Stack Developer Intern</h5>
-            <p><strong>Company:</strong> Brainsquare Technology</p>
-            <p><strong>Duration:</strong> 7 months</p>
+            </p>
+            <a
+              href="https://carvistafront-iwxb.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-link btn btn-brand mt-2"
+            >
+              View Live
+            </a>
           </div>
         </div>
       </div>
-
-      {/* College Card */}
-      <div className="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div className="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
-          <div>
-            <h5 className="mb-3">Shree Chimanbhai Patel Institute of Computer Applications</h5>
-            <p><strong>Duration:</strong> 2022 – 2025</p>
-            <p><strong>Total CGPA:</strong> 7.7</p>
+    
+       <div className="col-12 col-md-10 col-lg-8 mx-auto mb-5" data-aos="fade-up">
+        <div className="card rounded-4 bg-base shadow-effect" >
+          <div className="img rounded-4">
+            <img src={amazonhome} className="rounded-4 w-100" alt="Amazon frontpage ui " />
           </div>
-        </div>
-      </div>
-
-      {/* School Card */}
-      <div className="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div className="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
-          <div>
-            <h5 className="mb-3">Divine Life School</h5>
-            <p><strong>X:</strong> 73.8%</p>
-            <p><strong>XII:</strong> 78.5%</p>
+          <div className="card-content p-3">
+            <h4>Amazon-Front page UI</h4>
+            <p className="text-white">
+             This project is a static replica of Amazon’s front page, created using pure HTML and CSS. It mimics the basic layout and appearance of the Amazon India home screen, focusing on the user interface without any JavaScript or backend integration.
+The purpose of the project is to practice layout structuring, flexbox/grid systems, and modern CSS styling by recreating a complex and widely used e-commerce homepage.
+            </p>
+            <a
+              href="https://amazon-nq9h-git-main-piyushchauhas-projects.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-link btn btn-brand mt-2"
+            >
+              View Live
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-      {/* //ABOUT */}
-
 {/* CERTIFICATIONS */}
 <section id="certifications" className="full-hight px-lg-5">
-  <div className="container gy-4">
-    <div className="row p-4">
+  <div className="container gy-4" >
+    <div className="row p-4" style={{display:'flex',justifyContent:'center'}}>
       <div className="col-md-8" data-aos="fade-up">
-        <h6>CERTIFICATIONS</h6>
-        <h1>My Achievements & Certifications</h1>
+        <h1>CERTIFICATIONS</h1>
       </div>
     </div>
 
-    <div className="row gy-3 h6">
+    <div className="row gy-3 h6" style={{display:'flex',justifyContent:'center'}}>
       {/* Certification 1 */}
       <div className="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div className="p-4 shadow-effect bg-base py-4 rounded-4 text-center">
@@ -432,6 +356,55 @@ const Homepage = () => {
 
 {/* //CERTIFICATIONS */}
 
+      {/* ABOUT */}
+    <section id="about" className="full-hight px-lg-5">
+  <div className="container gy-4">
+    <div className="row p-4" style={{display:'flex',justifyContent:'center'}}>
+      <div className="col-md-8" data-aos="fade-up">
+        <h1>Education</h1>
+      </div>
+    </div>
+
+    <div className="row mb-4 gy-4">
+      {/* Internship Card */}
+      <div className="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div className="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 className="mb-3">MERN Stack Developer Intern</h5>
+            <p><strong>Company:</strong> Brainsquare Technology</p>
+            <p><strong>Duration:</strong> 7 months</p>
+          </div>
+        </div>
+      </div>
+
+      {/* College Card */}
+      <div className="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div className="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 className="mb-3">Shree Chimanbhai Patel Institute of Computer Applications</h5>
+            <p><strong>Duration:</strong> 2022 – 2025</p>
+            <p><strong>Total CGPA:</strong> 7.7</p>
+          </div>
+        </div>
+      </div>
+
+      {/* School Card */}
+      <div className="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div className="bg-base p-4 rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h5 className="mb-3">Divine Life School</h5>
+            <p><strong>X:</strong> 73.8%</p>
+            <p><strong>XII:</strong> 78.5%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* //ABOUT */}
+
+
      
 
       {/* FOOTER */}
@@ -450,6 +423,15 @@ const Homepage = () => {
         </div>
       </footer>
       {/* //FOOTER */}
+      <a
+  href={Piyushchauhancv}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="floating-resume-btn"
+  title="Check Resume"
+>
+  <i className="las la-file-alt me-2"></i> Check Resume
+</a>
     </div>
   );
 };
