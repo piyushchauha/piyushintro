@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
-import 'bootstrap/dist/css/bootstrap.min.css'; import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap's JavaScript bundle
-import '../Assets/css/aos.css'; // Re-import AOS CSS for clarity in React context
-import '../Assets/css/line-awesome.min.css'; // Import Line Awesome CSS
-import '../Assets/css/style.css'; // Import your custom style.css
+import 'aos/dist/aos.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../Assets/css/aos.css';
+import '../Assets/css/line-awesome.min.css';
+import '../Assets/css/style.css';
 
 // Import images
 import profile from '../Assets/images/Profile.jpeg';
@@ -26,6 +26,7 @@ import tcssoftskill from '../Assets/images/Chauhan_Piyush_tcs softskill_page-000
 import tatacybersecurity from '../Assets/images/Piyush Chauhan Cybersecurity Analyst Job Simulation_page-0001.jpg'
 import Piyushchauhancv from '../Assets/Pdf/piyushchauhancv.pdf';
 import portfolio from '../Assets/images/piyushintrohome.png';
+import Chauhan_Piyush_FullStack_Developer from '../Assets/Pdf/Chauhan_Piyush_FullStack_Developer.pdf'
 // NO LONGER NEEDED if using Bootstrap's native ScrollSpy
 // import ScrollSpy from 'react-scrollspy';
 
