@@ -24,7 +24,7 @@ import Redux from '../Assets/images/Redux.png'
 import Mui from '../Assets/images/Mui.png'
 import tcssoftskill from '../Assets/images/Chauhan_Piyush_tcs softskill_page-0001.jpg'
 import tatacybersecurity from '../Assets/images/Piyush Chauhan Cybersecurity Analyst Job Simulation_page-0001.jpg'
-import Piyushchauhancv from '../Assets/Pdf/piyushchauhancv.pdf';
+// import Piyushchauhancv from '../Assets/Pdf/piyushchauhancv.pdf';
 import portfolio from '../Assets/images/piyushintrohome.png';
 import Chauhan_Piyush_FullStack_Developer from '../Assets/Pdf/Chauhan_Piyush_FullStack_Developer.pdf'
 // NO LONGER NEEDED if using Bootstrap's native ScrollSpy
