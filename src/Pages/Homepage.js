@@ -63,7 +63,6 @@ const Homepage = () => {
       {/* NAV BAR */}
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
         <div className="container flex-lg-column">
-          {/* FIX: Change href="#" to href="#home" or "/" for proper navigation */}
           <a className="navbar-brand mx-lg-auto mb-lg-4" href="#home">
             <span className="fw-bold h3 d-block d-lg-none">Piyush Chauhan</span>
             <img
